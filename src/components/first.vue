@@ -1,6 +1,6 @@
 <template>
     <div>
-           <div class="c1">Hellow World  {{ p }} et {{ d [2]}}</div>
+           <div :class="class_name">Hellow World  {{ p }} et {{ d [2]}}</div>
            <SecondVue msg="this is the msg of"/>
            <button @click="func_1">btn</button>
     </div>
@@ -15,13 +15,14 @@
    const func_1 = () => {
     console.log(' this is func_1 ()');
    }
+   const class_name= 'class1'
    
  
 
 </script>
 
 <style scoped>
-.c1 {
+.class1 {
     color: brown;
     background-color: aquamarine;
    
